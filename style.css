@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 100px;
+  height: 100%;
+  background: #fff;
+  padding: 30px 0px;
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper .sidebar h2{
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #bdb8d7;
+  padding-bottom: 25px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #000;
+  
+}
+
+.wrapper .sidebar ul li:hover{
+    background-color: #b0dbeb;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 100px;
+}
+
+.wrapper .main_content .header{
+  padding: 40px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 150px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info input{
+    width: 880px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .main_content .info input::placeholder {
+    color: black;
+    font-size: .8rem;
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+.wrapper .main_content .info h3{
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}
+
+.wrapper .main_content .info button{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: medium;
+}
